@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myapp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		This is my header
+	</header>
+	<nav>
+		<li>
+			<%= link_to('Home',home_path) %>
+		</li>
+	</nav>
+
+<%= yield %>
+	<footer>
+		This is my footer
+	</footer>
+</body>
+</html>
